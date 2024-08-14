@@ -1,0 +1,45 @@
+public class T17 {
+	public static void main(String[] args) {
+		int salary = 4500; // 小李的工资
+		int bonus = 1000; // 小李的奖金
+		int insurance = 500; // 小李要缴纳的五险一金
+		int income = salary + bonus - insurance; // 小李的最终收入
+		System.out.println("小李的月收入是" + income);
+	}
+}
+
+
+public class T2 {
+	public static void main(String[] args) {
+		int number = 123; // 定义所需要的转换的数字
+		// 定义三个数字接收number转换后的结果
+		int number1;
+		int number2;
+		int number3;
+		number1 = number % 10; // 计算个位数上的余数
+		number2 = number / 10 % 10; // 计算十位数上的余数
+		number3 = number / 100; // 计算百位数上的余数
+		System.out.println(number + "转换后的结果为" + number1 + number2 + number3); // 输出转换后的结果
+	}
+}
+
+
+public class T3 {
+	public static void main(String[] args) {
+		int score = 80; // 学生的分数
+		System.out.println(score >= 60 ? score + "分，成绩及格" : score + "分，成绩不及格");
+	}
+}
+
+
+public class T4 {
+	public static void main(String[] args) {
+		double phonecharge = 10; // 当前话费
+		double communtime; // 通话时间
+		double flux = 10; // 使用10M流量
+		double fluxCost = flux * 0.3; // 10M流量的费用
+		double communcost = 0.2; // 通话0.2元/分钟
+		communtime = (phonecharge - fluxCost) / communcost; // 计算剩余通话时间
+		System.out.println("话费余额可通话时长为" + communtime + "分钟");
+	}
+}
