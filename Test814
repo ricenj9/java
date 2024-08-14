@@ -12,7 +12,6 @@ public class T17 {
 public class T2 {
 	public static void main(String[] args) {
 		int number = 123; // 定义所需要的转换的数字
-		// 定义三个数字接收number转换后的结果
 		int number1;
 		int number2;
 		int number3;
