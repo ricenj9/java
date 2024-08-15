@@ -1,0 +1,45 @@
+
+public class T1 {
+	public static void main(String[] args) {
+		double l = 400, w = 160, h = 30;// 货箱的长宽高
+		double r = 23;// 西瓜的直径
+		int lCount = (int) (l / r);// 长可以放下的西瓜数量
+		int wCount = (int) (w / r);// 宽可以放下的西瓜数量
+		int hCount = (int) (h / r);// 高可以放下的西瓜数量
+		System.out.println("货车满载时能装" + (lCount * wCount * hCount) + "个西瓜");
+		System.out.println((lCount * wCount * hCount) > 100 ? "货车实际能装100个西瓜" : "货车实际能装" + (lCount * wCount * hCount) + "个西瓜");
+	}
+}
+
+
+public class T2 {	
+	public static void main(String args[]){			
+		int x = 45;
+		if(x % 2 == 0){
+			System.out.println("x为偶数");
+		}
+		else{T2
+			System.out.println("x是奇数");
+		}
+    }
+}
+
+public class T3 {
+	public static void main(String[] args) {
+		int bai = 0; // 百位上的数字
+		int shi = 0; // 十位上的数字
+		int ge = 0; // 个位上的数字
+		int number = 0; // 数字的个数
+		for (bai = 4; bai <= 7; bai++) {
+			for (shi = 4; shi <= 7; shi++) {
+				for (ge = 4; ge <= 7; ge++) {
+					if (bai != shi && shi != ge && bai != ge) {
+						number += 1;
+						System.out.println(bai * 100 + shi * 10 + ge);
+					}
+				}
+			}
+		}
+		System.out.println("总共能够组成" + number + "个数字！");
+	}
+}
